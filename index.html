@@ -424,52 +424,13 @@
         .rules-category {
             margin-bottom: 25px;
         }
-        
-        .rules-category {
-        margin-bottom: 25px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-radius: var(--radius-small);
-        padding: 15px;
-        cursor: pointer;
-    }
-    
-    .rules-category:hover {
-        background-color: rgba(76, 175, 80, 0.05);
-        transform: translateY(-3px);
-        box-shadow: var(--shadow-light);
-    }
     
     .rules-category h3 {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    
-    .rules-category h3::after {
-        content: '\f107'; /* 下箭头图标 */
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
-        font-size: 1.2rem;
-        color: var(--primary);
-        transition: transform 0.3s ease;
-    }
-    
-    .rules-category.active h3::after {
-        transform: rotate(180deg);
-    }
-    
-    .rules-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease;
-        opacity: 0;
-    }
-    
-    .rules-category.active .rules-content {
-        max-height: 1000px; /* 足够大的值以容纳内容 */
-        opacity: 1;
-        transition: max-height 0.5s ease, opacity 0.3s ease 0.2s;
-    }
+
     
     /* 点击时的高亮效果 */
     .rules-category.highlight {
