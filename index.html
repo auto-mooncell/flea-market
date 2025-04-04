@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -425,11 +426,13 @@
             margin-bottom: 25px;
         }
     
-    .rules-category h3 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+        .rules-category h3 {
+            /* 移除原有 justify-content 属性 */
+            justify-content: center; /* 改为居中对齐 */
+            width: 100%; /* 确保容器宽度充满父元素 */
+            text-align: center; /* 添加文本居中 */
+            padding: 0 20px; /* 添加内边距防止文字贴边 */
+        }
 
     
     /* 点击时的高亮效果 */
@@ -716,7 +719,11 @@
         </div>
         
         <div class="cta-container">
-            <a href="#" class="cta-button">Register Now</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXkF7g7xdV-hcnWkihCcO4FUvqzMZfxlO3JTtVi8OkyiKAVw/viewform?usp=header" 
+            class="cta-button"
+            target="_blank">
+            Register Now</a>
+
         </div>
         
         
